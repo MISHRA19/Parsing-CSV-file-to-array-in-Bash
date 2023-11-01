@@ -1,0 +1,9 @@
+csv_file="./arrays_table.csv"
+column_0=($(cut -d "," -f1 $csv_file))
+column_1=($(cut -d "," -f2 $csv_file))
+column_2=($(cut -d "," -f3 $csv_file))
+
+# Print first column as an array
+
+echo " Displaying the first column: "
+echo "${column_0[@]}"
